@@ -35,7 +35,7 @@ else (valorCompra <= cupo)
     
 
 
-switch () {
+switch (cuotas) {
 
      case (cuotas == 1):
             tasa = tasaMensual_1cuota;
@@ -51,6 +51,13 @@ switch () {
 
         default:("Cantidad de cuotas no vlaida")
 }
+
+    let interesTotal = valorCompra * tasa * (cuotas + 1) / 2;
+    let totalPagar = valorCompra + interesTotal;
+    let cuotaMensual = totalPagar / cuotas;
+
+
+
 
 
        
