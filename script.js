@@ -9,7 +9,7 @@ Problema B Simulador de compra en cuotas con tarjeta de crédito
 const cuotasPermitidas 
 const tasaMensual_1cuota = 0;   // %
 const tasaMensual_2_12cuotas = 1.9; // %
-const tasaMensual_13_24cuotas = 2.9; // %
+const tasaMensual_13_36cuotas = 2.9; // %
 
 // VARIABLES 
 
@@ -27,4 +27,30 @@ else if (cuotas < 1 || cuotas > 36) {
     alert("El numero de cuotas no es valido");
 }
 
+if (valorCompra > cupo) {
+    alert ("Compra rechazada por cupo insuficiente")
+}
+else (valorCompra <= cupo)
+    alert ("Compra aprobada, puede continuar:")
+    
 
+
+switch () {
+
+     case (cuotas == 1):
+            tasa = tasaMensual_1cuota;
+            break;
+
+        case (cuotas >= 2 && cuotas <= 12):
+            tasa = tasaMensual_2_12cuotas;
+            break;
+
+        case (cuotas >= 13 && cuotas <= 36):
+            tasa = tasaMensual_13_36cuotas;
+            break;
+
+        default:("Cantidad de cuotas no vlaida")
+}
+
+
+       
